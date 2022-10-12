@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jupyter-notebook-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jupyter-notebook
+  template:
+    metadata:
+      labels:
+        app: jupyter-notebook
+    spec:
+      containers:
+      - image: snpsuen/jupyter-tensorflow-opencv:v05
+        name: jupyter-notebook
+        ports:
+        - containerPort: 8888
+        # command:
+        # - start-notebook.sh
+        # - "--NotebookApp.allow_origin=https://colab.research.google.com --port=8888 --NotebookApp.port_retries=0"
+        command: ["start-notebook.sh"]
+        args: ["--NotebookApp.allow_origin=https://colab.research.google.com", "--port=8888", "--NotebookApp.port_retries=0"]
+        volumeMounts:
+        - name: jupyter-notebook-data
+          mountPath: /home/jovyan/data
+      volumes:
+      - name: jupyter-notebook-data
+        hostPath:
+           path: /var/tmp/jovyan/data
+           type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: jupyter-notebook
+  labels:
+    app: jupyter-notebook
+spec:
+  selector:
+    app: jupyter-notebook
+  ports:
+  - name: service
+    port: 8888
+    protocol: TCP
+    targetPort: 8888
+  type: LoadBalancer
