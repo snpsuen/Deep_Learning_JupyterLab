@@ -20,7 +20,7 @@ This is to spin up a JupyterLab in Kubnetes to use the DL models trained and shi
     or  http://127.0.0.1:8888/lab?token=1e07dd2c26a17fe32d835c8469912cba485f32e5e2ee7bda
   </pre>
  
-  3.  The lab will run the working directory /home/jovyan that contains the following folders, which are local to the container, exccept /home/jovyan/data that is mounted on /var/tmp/jovyan/data on a K8s node.
+  3.  The lab will run in the working directory /home/jovyan that contains the following folders, which are local to the container, exccept /home/jovyan/data that is mounted on /var/tmp/jovyan/data on a K8s node.
   <pre>
   /home/jovyan
   ├── data
