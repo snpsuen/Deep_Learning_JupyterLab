@@ -27,4 +27,4 @@ This is to spin up a JupyterLab in Kubnetes to use the DL models trained and shi
   
 4.  Notebook template [Template_of_RNN_TC8_Annually_Local.ipynb] (https://raw.githubusercontent.com/snpsuen/Deep_Learning_JupyterLab/main/script/Template_of_RNN_TC8_Annually_Local.ipynb) is meant to be executed on Google Colab to build and train an RNN LSTM sample model. The model will subsequenty swing from Colab via this repo to the JuypyterLab container.
 
-5. This site was built using [Template_of_RNN_TC8_Annually_Local.ipynb](https://github.com/snpsuen/Deep_Learning_JupyterLab/blob/main/script/Template_of_RNN_TC8_Annually_Local.ipynb).
+5. Notebook template [Template_of_RNN_TC8_Annually_Local.ipynb](https://github.com/snpsuen/Deep_Learning_JupyterLab/blob/main/script/Template_of_RNN_TC8_Annually_Local.ipynb).
