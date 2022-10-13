@@ -1,5 +1,5 @@
 # Deep_Learning_JupyterLab
-This is to spin up a JupyterLab in Kubnetes to use the DL models built in and shipped from Google Colab.
+This is to spin up a JupyterLab in Kubnetes to use the DL models trained and shipped from Google Colab.
 <p>
   1.  Create a host volume on K8s nodes, to be owned by uid 1000 and gid 100. <br>
   <pre>
