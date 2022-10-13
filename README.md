@@ -22,4 +22,4 @@ This is to spin up a JupyterLab in Kubnetes to use the DL models trained and shi
   ├── work
   </pre>
   All the folders are local to the container, exccept /home/jovyan/data being mounted on /var/tmp/jovyan/data on a K8s node.
-  4.  The provided notebook template, https://raw.githubusercontent.com/snpsuen/Deep_Learning_JupyterLab/main/script/Template_of_RNN_TC8_Annually_Local.ipynb, is meant to be executed on Google Colab to build and train an RNN LSTM sample model. The model will subsequenty swing from Colab via this repo to the JuypyterLab container.
+    4.  The provided notebook template, https://raw.githubusercontent.com/snpsuen/Deep_Learning_JupyterLab/main/script/Template_of_RNN_TC8_Annually_Local.ipynb, is meant to be executed on Google Colab to build and train an RNN LSTM sample model. The model will subsequenty swing from Colab via this repo to the JuypyterLab container.
