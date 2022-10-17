@@ -1,6 +1,7 @@
 # Deep_Learning_JupyterLab
-This is to spin up a JupyterLab in Kubnetes to use the DL models trained and shipped from Google Colab. <br>
-In this example. the model uses RNN LSTM to predict the number of tropical cylones that results in the hoisting of typhoon signal 8 or above in HK in a calendar year.
+A JupyterLab pod is deployed in Kubnetes to use DL models trained and shipped from Google Colab.
+<p>
+In this example, an RNN model is built with LSTM in Colab to predict the number of tropical cylones that results in the hoisting of typhoon signal 8 or above in HK in a calendar year.
 <p>
 
 ![RNN LSTM Architecture](RNN_LSTM_Diagram05.jpg)
