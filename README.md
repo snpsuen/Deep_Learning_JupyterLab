@@ -3,6 +3,7 @@ A JupyterLab pod is deployed in Kubnetes to use DL models trained and shipped fr
 <p>
 In this example, an RNN model is built with LSTM in Colab to predict the number of tropical cylones that results in the hoisting of typhoon signal 8 or above in HK in a calendar year.
 <p>
+  The architecture of such a model is illustated in the following diagrams to contain a LSTM layer of 100 output units, together with a fully connected layer of 50 neurons. A scalar output for the current yearly number is predicted from the observation of 4 yearly timesteps.
 
 ![RNN LSTM Architecture](RNN_LSTM_Diagram05.jpg)
 
